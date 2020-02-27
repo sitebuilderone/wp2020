@@ -1,8 +1,9 @@
+<?php
 /**
  * Plugin Name:       A simple optimizer by SitebuilderOne
  * Plugin URI:        https://github.com/sitebuilderone/wp2020/
  * Description:       Removes unecessary items from WordPress to make leaner and faster. Generate press only
- * Version:           1.0.5
+ * Version:           1.0.6
  * Author:            Anthony Lepki
  * License:           GNU General Public License v2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
@@ -66,4 +67,4 @@ add_filter('user_contactmethods','wpb_new_contactmethods',10,1);
 //https://www.wpbeginner.com/plugins/how-to-add-additional-user-profile-fields-in-wordpress-registration/
 
 
-
+?>
