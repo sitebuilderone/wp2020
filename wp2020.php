@@ -53,3 +53,17 @@ echo '<p>Welcome to Custom Blog Theme! Need help? Contact the developer <a href=
 }
 
 
+
+function wpb_new_contactmethods( $contactmethods ) {
+// Add Twitter
+$contactmethods['twitter'] = 'Twitter';
+//add Facebook
+$contactmethods['facebook'] = 'Facebook';
+ 
+return $contactmethods;
+}
+add_filter('user_contactmethods','wpb_new_contactmethods',10,1);
+//https://www.wpbeginner.com/plugins/how-to-add-additional-user-profile-fields-in-wordpress-registration/
+
+
+
