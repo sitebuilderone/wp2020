@@ -2,7 +2,7 @@
  * Plugin Name:       A simple optimizer by SitebuilderOne
  * Plugin URI:        https://github.com/sitebuilderone/wp2020/
  * Description:       Removes unecessary items from WordPress to make leaner and faster. Generate press only
- * Version:           1.0.4
+ * Version:           1.0.5
  * Author:            Anthony Lepki
  * License:           GNU General Public License v2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,4 +39,17 @@ echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a>
 }
  
 add_filter('admin_footer_text', 'remove_footer_admin');
+
+
+add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+ 
+function my_custom_dashboard_widgets() {
+global $wp_meta_boxes;
+ 
+wp_add_dashboard_widget('custom_help_widget', 'Theme Support', 'custom_dashboard_help');
+}
+function custom_dashboard_help() {
+echo '<p>Welcome to Custom Blog Theme! Need help? Contact the developer <a href="mailto:yourusername@gmail.com">here</a>. For WordPress Tutorials visit: <a href="https://www.wpbeginner.com" target="_blank">WPBeginner</a></p>';
+}
+
 
