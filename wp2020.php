@@ -1,7 +1,7 @@
 /**
  * Plugin Name:       Optimizer by SitebuilderOne
  * Plugin URI:        https://github.com/sitebuilderone/wp2020/
- * Description:       A plugin to automatically update GitHub, Bitbucket or GitLab hosted plugins and themes. It also allows for remote installation of plugins or themes into WordPress.
+ * Description:       Removes unecessary items from WordPress to make leaner and faster
  * Version:           1.0.0
  * Author:            Anthony Lepki
  * License:           GNU General Public License v2
